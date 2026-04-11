@@ -56,4 +56,8 @@ def index(request: Request):
     fastapi.templating.Jinja2Templates.TemplateResponse
         Rendered template of the main index page.
     """
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(
+    request,
+    "index.html",
+    {"request": request}
+)
