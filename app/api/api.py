@@ -57,7 +57,7 @@ def index(request: Request):
         Rendered template of the main index page.
     """
     return templates.TemplateResponse(
-    request,
-    "index.html",
-    {"request": request}
-)
+        request,
+        "index.html",
+        {"request": request},
+    )
